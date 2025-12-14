@@ -1,0 +1,20 @@
+apiVersion: v2
+name: infra-secrets
+version: 0.1.0
+description: Secrets management infrastructure for homelab
+type: application
+appVersion: 0.1.0
+maintainers:
+  - name: KarafrOrg
+    email: karafra@karafra.net
+keywords:
+  - secrets
+  - external-secrets
+  - homelab
+  - infrastructure
+dependencies:
+  - name: external-secrets
+    version: 1.1.1
+    repository: https://charts.external-secrets.io/
+    import-values:
+      - values-external-secrets.yaml
