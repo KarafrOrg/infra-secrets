@@ -1,0 +1,18 @@
+apiVersion: v2
+name: infra-secrets
+version: 0.1.0
+description: Secrets management infrastructure for homelab
+type: application
+appVersion: 0.1.0
+maintainers:
+  - name: KarafrOrg
+    email: karafra@karafra.net
+keywords:
+  - secrets
+  - sealed-secrets
+  - homelab
+  - infrastructure
+dependencies:
+  - name: sealed-secrets
+    version: 2.18.0
+    repository: https://bitnami-labs.github.io/sealed-secrets/
