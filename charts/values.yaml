@@ -12,12 +12,13 @@ external-secrets:
       memory: 256Mi
   certController:
     enabled: true
-    requests:
-      cpu: 16m
-      memory: 64Mi
-    limits:
-      cpu: 64m
-      memory: 256Mi
+    resources:
+      requests:
+        cpu: 16m
+        memory: 64Mi
+      limits:
+        cpu: 64m
+        memory: 256Mi
   webhook:
     enabled: true
     resources:
