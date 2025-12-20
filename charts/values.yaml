@@ -3,5 +3,29 @@ external-secrets:
     enabled: true
     additionalLabels:
       metrics-collector: prometheus
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 100m
+      memory: 256Mi
+  certController:
+    enabled: true
+    requests:
+      cpu: 16m
+      memory: 64Mi
+    limits:
+      cpu: 64m
+      memory: 256Mi
+  webhook:
+    enabled: true
+    resources:
+      requests:
+        cpu: 16m
+        memory: 64Mi
+      limits:
+        cpu: 64m
+        memory: 256Mi
 gcp:
   projectID: karafra-net
